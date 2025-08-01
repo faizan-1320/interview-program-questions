@@ -236,4 +236,20 @@ for i,j in count.items():
         print(i)
         break
 
+# == New list with all even numbers first, followed by odd numbers ==
+
+def merge_list(list1,list2):
+    demo = list1+list2
+    odd_list = []
+    even_list = []
+    for i in demo:
+        if i%2==0:
+            even_list.append(i)
+        else:
+            odd_list.append(i)
+    return even_list+odd_list
+l = [1,4,32,3,45,56]
+l1= [3,5,75,34,86,1] 
+output = merge_list(l,l1)
+print(output)
 # =============================================== ###### ========================================
